@@ -5,6 +5,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
+    <link href="./fonts/fonts.css" rel="stylesheet" />
+    <link href="./styles/global.css" rel="stylesheet" />
+    <link href="./styles/style.css" rel="stylesheet" />
   </head>
-  <body></body>
+  <body>
+  <header class='header'>
+    <nav class='header__menu'>
+      <ul class='header__menu-list'>
+        <li class='header__menu-item header__menu-item_active'>
+          <a href='' class='header__menu-link'>
+            главная
+          </a>
+        </li>
+        <li class='header__menu-item'>
+          <a href='' class='header__menu-link'>
+            посмотреть лоты
+          </a>
+        </li>
+        <li class='header__menu-item'>
+          <a href='' class='header__menu-link'>
+            об аукционе
+          </a>
+
+        </li>
+      </ul>
+    </nav>
+    <a class='header__logo'>
+      <img
+        src='./images/logo-black.svg'
+        alt='Логотип проекта'
+        class='logo'>
+    </a>
+    <div class='header__contact-list'>
+        <a href='tel:+99995555555' class='header__contact-item'>
+          +9 999 555 5555
+        </a>
+      <a href='mailto:info@sobaka.ge' class='header__contact-item'>
+        info@sobaka.ge
+      </a>
+      <p class='header__contact-item'>
+        наб. Принсенграхт 263-265, Амстердам
+      </p>
+    </div>
+  </header>
+  <main class='main'>
+    <section class='cover'>
+      <h1 class='cover__title'>
+        <span class='accent-span'>оно</span>
+        <span class='accent-span text-center'>тебе</span>
+        <span class='accent-span text-right'>надо</span>
+      </h1>
+      <div class='cover__description'>
+        <h2 class='cover__description-text'>
+          Аукцион вещей, в которые никто не верил
+        </h2>
+        <button class='bet-button'>Сделать ставку</button>
+      </div>
+
+      <div class='overlay'></div>
+    </section>
+    <section class='lots'></section>
+    <section class='about'></section>
+  </main>
+  <footer class='footer'></footer>
+  </body>
 </html>
