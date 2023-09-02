@@ -8,56 +8,62 @@ nav {
     display: block;
 }
 
+/*Шапка сайта*/
 
 .header {
     width: 100%;
-    margin: 0 auto;
     padding: 92px 50px;
     display: grid;
-    grid-template-columns: 5fr 3fr 2fr;
+    grid-template-columns: 4fr 3fr 1fr;
     align-items: center;
 }
 
-.header__menu {
 
-}
-
-.header__menu-list {
+.header__link-list {
     width: 388px;
     display: flex;
     gap: 13px;
     justify-content: space-between;
 }
 
-.header__menu-item {
+.header__links-list-item {
     list-style: circle;
     text-decoration: underline;
 }
 
-.header__menu-item_active {
+.header__links-list-item_no-bullit {
     list-style: none;
     text-decoration: none;
  }
 
+.header__link_active {
+    text-decoration: none;
+}
 
 .header__logo {
     display: block;
     width: 148px;
 }
 
-.logo {
+.header__logo-image {
 width: 100%;
 }
 
 .address {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.35;
     width: 240px;
     display: flex;
     flex-direction: column;
 }
 
-.header__contact-item {
+.header__address {
     line-height: 1.35;
 }
+
+/*Секция с главным изображением*/
 
 .cover {
     position: relative;
@@ -81,17 +87,26 @@ width: 100%;
     text-transform: uppercase;
 }
 
-.accent-span {
+.aligned-text {
     z-index: 10;
     text-align: left;
+    letter-spacing: 30px;
 }
 
-.text-center {
+.aligned-text_center {
     text-align: center;
 }
 
-.text-right {
+.aligned-text_right {
     text-align: right;
+}
+
+.letter-spacing-extended {
+    letter-spacing: 60px;
+}
+
+.no-letter-spacing {
+    letter-spacing: normal;
 }
 
 .cover__description {
@@ -137,7 +152,10 @@ width: 100%;
     background-color: rgba(0,0,0,0.6);
 }
 
+/*Секция с лотами*/
+
 .lots{
+    margin: 0 auto;
     padding: 180px 50px 0;
 }
 
@@ -152,6 +170,7 @@ width: 100%;
 
 .lots__card-list {
     display:flex;
+    justify-content: flex-start;
     flex-wrap: wrap;
     gap: 25px;
     list-style: none;
@@ -191,7 +210,7 @@ width: 100%;
     line-height: 1.2;
     text-decoration-line: underline;
     text-transform: uppercase;
-    text-align: center;
+    text-align: left;
 }
 
 .card__text {
@@ -215,6 +234,8 @@ width: 100%;
     padding-left: 40px;
     padding-top: 30px;
 }
+
+/*Об аукционе*/
 
 .about {
     padding: 182px 50px 0;
@@ -258,6 +279,9 @@ width: 100%;
 .pb-25px {
     padding-bottom: 25px;
 }
+
+
+/*Подвал*/
 
 .footer {
     padding: 180px 50px 90px;
