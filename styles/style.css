@@ -57,15 +57,13 @@ width: 100%;
     font-style: normal;
     font-weight: 400;
     line-height: 1.35;
-    width: 240px;
-    display: flex;
-    flex-direction: column;
+    max-width: 240px;
     justify-self: end;
 }
 
 .header__address {
+    align-self: end;
     line-height: 1.35;
-    max-width: fit-content;
 }
 
 /*Секция с главным изображением*/
@@ -246,7 +244,6 @@ width: 100%;
 .about__column {
     display: grid;
     grid-template-columns: 430px auto;
-    align-items: center;
     gap: 8px 25px;
 }
 
@@ -267,13 +264,13 @@ width: 100%;
 }
 
 .about__title {
+    padding: 100px 0;
     font-size: 40px;
     font-weight: 700;
     text-transform: uppercase;
 }
 
 .about__text {
-    grid-column-start:2;
     font-size: 20px;
     display: flex;
     flex-direction: column;
