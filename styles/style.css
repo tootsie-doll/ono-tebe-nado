@@ -8,7 +8,7 @@ nav {
     display: block;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
@@ -162,7 +162,7 @@ a{
 
 /*Секция с лотами*/
 
-.lots{
+.lots {
     margin: 0 auto;
     padding: 180px 50px 0;
 }
@@ -253,7 +253,6 @@ a{
 
 .about {
     padding: 182px 50px 0;
-
 }
 
 .about__column {
